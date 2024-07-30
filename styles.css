@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    transition: color, background-color, font-size, left 500ms cubic-bezier(0.075, 0.82 0.165, 1);
+    transition-property: color, background-color,font-size, left;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 500ms;
+    position: relative;
+    left: 0;
+}
+
+/* PREGUNTAR A LOS CHICOS PORQUE NO ME FUNCIONA EL SHORTHAND*/
+
+body:hover .box{
+    background-color: green;
+    color: orangered;
+    font-size: 90px;
+    left: 500px;
+}
